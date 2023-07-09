@@ -1,7 +1,7 @@
-const getRandomNumbers = require('./index')
+const getFestivalsOccitanie = require('./index');
 
-test("it should return an integer" , () => {
-    const number  = getRandomNumbers();
-    expect(number).toBeGreaterThanOrEqual(0);
-    expect(number).toBeLessThanOrEqual(100);
+test("the array should not be empty", async() => {
+    const festivals = await getFestivalsOccitanie();
+    expect(festivals).not.toBeNull();
+    expect(festivals).toBeInstanceOf(Array);
 })

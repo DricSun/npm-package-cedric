@@ -2,7 +2,7 @@
   "name": "cedric-a3-td4",
   "version": "1.0.1",
   "description": "package npm first project",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "jest"
   },
